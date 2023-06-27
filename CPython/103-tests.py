@@ -110,4 +110,4 @@ Element 3: int
 Element 0: str
 [.] bytes object info
   [ERROR] Invalid Bytes Object
-julien@ubuntu:~/CPython$ 
+ 
