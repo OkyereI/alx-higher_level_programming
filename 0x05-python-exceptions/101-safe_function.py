@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-
-
 import sys
 
 
 def safe_function(fct, *args):
-    """
-    A function that executes a function safely
-    """
     try:
         result = fct(*args)
-        return (result)
-    except:
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
-        return (None)
+    except ZeroDivisionError:
+        result = None
+        sys.stderr.write("Exception: division by zero\n")
+    except IndexError:
+        result = None
+        sys.stderr.write("Exception: list index out of range\n")
+
+    return result

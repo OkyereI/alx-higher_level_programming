@@ -1,2 +1,1 @@
-# Python - Exceptions
- Foundations - Higher-level programming ― Python
+#0x05-python-exceiptions
